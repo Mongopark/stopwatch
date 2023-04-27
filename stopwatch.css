@@ -1,0 +1,17 @@
+body{
+font-family:san-serif;
+}
+div.stopwatch{
+	background-color:#111999;
+	box-shadow: 1px 0px 4px 2px #9c9a9a;
+	border: 12px solid white;
+}
+h1.mystopwatch{
+color:pink;
+}
+button{
+	border: 12px solid white;
+}
+div.timer{
+	box-shadow: 4px 1px 8px 2px black inset;
+}
