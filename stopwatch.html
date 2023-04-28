@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel=stylesheet href="webfonts/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
 	<link rel="stylesheet" href="stopwatch.css">
+	<link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	  
 <title>JavaScript StopWatch</title>
 </head>
 <body>
 
-<a class="btn btn-large btn-dark" href="stopwatcher.html" target="_blank">button</a>
+<a class="btn btn-large btn-success p-3 m-3 rounded-5" href="#" id="unlockstopwatch">Unlock stopwatch</a>
 
+<div class="container text-center p-5 m-5" id="errorlock">
+	sorry stopwatch is locked <i class="far fa-face-frown"></i>
+<i class="bi bi-lock display-1 d-block"></i>
+</div>
 	<!-- STOPWATCH SECTION STARTS -->
 	<section class="container-fluid d-flex justify-content-center">
 	<div id="stopwatch-container" class="stopwatch container-fluid justify-center m-5 w-75 py-1 rounded-3 p-5">
-		<h1 class="mystopwatch container-fluid text-center fw-bold text-light m-3 p-2">My Stopwatch</h1>
+		<h1 class="mystopwatch container-fluid text-center fw-bold text-light m-3 p-2">This Stopwatch</h1>
 		<div class="container-fluid d-flex justify-content-between">
 		<button class="btn btn-large btn-success fw-bold w-25" onclick="start(true)" id="start-btn">Start<i class="bi bi-clock"></i></button>
-		<button class="btn btn-large btn-warning fw-bold w-25" onclick="pause()">Pause<i class="bi bi-globe"></i></button>
-		<button class="btn btn-large btn-danger fw-bold w-25" onclick="reset()">Reset<i class="bi bi-recycle"></i></button></div>
+		<button class="btn btn-large btn-warning fw-bold w-25" onclick="pause()">Pause<i class="fas fa-globe"></i></button>
+		<button class="btn btn-large btn-danger fw-bold w-25" onclick="reset()">Reset<i class="fas fa-recycle"></i></button></div>
 		<div class="timer bg-light">
 		<div class="item d-flex justify-content-between fw-bold px-5 mt-1"><span>mins:</span><span>secs:</span><span>millisecs:</span></div>
 		<div class="item text-center display-1 fw-bold" id="stopwatch">00:00:00</div>
