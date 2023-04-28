@@ -3,6 +3,7 @@ var startBtn = document.getElementById("start-btn");
 var unlockBtn = document.getElementById("unlockstopwatch");
 var stopwatchContainer = document.getElementById("stopwatch-container");
 var padLock = document.getElementById("errorlock");
+var btnText = document.getElementById("buttontext");
 var timeoutId = null;
 var ms = 0;
 var sec = 0;
@@ -16,10 +17,10 @@ function unLock(e){
         {alert("are you sure you want to lock this stopwatch?")
 var proMpt = prompt("input the password to lock this stopwatch, note that the password is a number", "");
 if (proMpt =="223344"){
-    alert("password correct, click OK to lock stopwatch");
+    alert("password correct, click CLOSE to lock stopwatch");
 stopwatchContainer.style.display="none";
 padLock.style.display="block";
-unlockBtn.textContent="Unlock stopwatch";
+btnText.textContent="Unlock stopwatch";
 unlockBtn.classList.replace("btn-danger","btn-success");
 }
 
@@ -30,10 +31,10 @@ else{
     else if (unlockBtn.textContent=="Unlock stopwatch"){
 var proMpt = prompt("input the password to unlock this stopwatch, note that the password is a number", "");
 if (proMpt =="223344"){
-    alert("password correct, click OK to display stopwatch");
+    alert("password correct, click CLOSE to display stopwatch");
 stopwatchContainer.style.display="block";
 padLock.style.display="none";
-unlockBtn.textContent="Lock stopwatch";
+btnText.textContent="Lock stopwatch";
 unlockBtn.classList.replace("btn-success","btn-danger");
 }
 else{

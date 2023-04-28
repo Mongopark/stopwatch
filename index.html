@@ -10,15 +10,16 @@
 </head>
 <body>
 
-<a class="btn btn-large btn-success p-3 m-3 rounded-5" href="#" id="unlockstopwatch">Unlock stopwatch</a>
+<a class="btn btn-large p-3 m-3 rounded-5 display-4 text-bold btn-success" href="#" id="unlockstopwatch"><span class="h2 text-bold" id="buttontext">Unlock stopwatch</span></a>
 
-<div class="container text-center p-5 m-5" id="errorlock">
-	sorry stopwatch is locked <i class="far fa-face-frown"></i>
+<div class="container text-center p-5 m-5 h2 text-bold" id="errorlock">
+	sorry stopwatch is locked
+	<i class="far fa-face-frown"></i>
 <i class="bi bi-lock display-1 d-block"></i>
 </div>
 	<!-- STOPWATCH SECTION STARTS -->
 	<section class="container-fluid d-flex justify-content-center">
-	<div id="stopwatch-container" class="stopwatch container-fluid justify-center m-5 w-75 py-1 rounded-3 p-5">
+	<div id="stopwatch-container" class="stopwatch container-fluid justify-center m-5 w-75 py-5 rounded-3 p-5">
 		<h1 class="mystopwatch container-fluid text-center fw-bold text-light m-3 p-2">This Stopwatch</h1>
 		<div class="container-fluid d-flex justify-content-between">
 		<button class="btn btn-large btn-success fw-bold w-25" onclick="start(true)" id="start-btn">Start<i class="bi bi-clock"></i></button>
