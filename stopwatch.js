@@ -14,16 +14,18 @@ var min = 0;
 function unLock(e){
     e.preventDefault();
         if (unlockBtn.textContent=="Lock stopwatch")
-        {alert("are you sure you want to lock this stopwatch?")
+        {
+            var conFirm = confirm("are you sure you want to lock this stopwatch?")
+    if (conFirm==true){
 var proMpt = prompt("input the password to lock this stopwatch, note that the password is a number", "");
 if (proMpt =="223344"){
-    alert("password correct, click CLOSE to lock stopwatch");
+    alert("password correct, CLOSE to lock stopwatch");
 stopwatchContainer.style.display="none";
 padLock.style.display="block";
 btnText.textContent="Unlock stopwatch";
 unlockBtn.classList.replace("btn-danger","btn-success");
 }
-
+}
 else{
     alert("password Lock canceled, try again!!!!");
 }
@@ -31,7 +33,7 @@ else{
     else if (unlockBtn.textContent=="Unlock stopwatch"){
 var proMpt = prompt("input the password to unlock this stopwatch, note that the password is a number", "");
 if (proMpt =="223344"){
-    alert("password correct, click CLOSE to display stopwatch");
+    alert("password correct, CLOSE to display stopwatch");
 stopwatchContainer.style.display="block";
 padLock.style.display="none";
 btnText.textContent="Lock stopwatch";
