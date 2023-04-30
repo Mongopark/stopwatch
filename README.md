@@ -4,4 +4,4 @@ https://stoptimer.vercel.app
 
 The Password to unlock this stopwatch is 223344
 
-This is a StopWatch with Password built with HTML, CSS, Javascript and Bootstrap.
+This is a StopWatch with Password built with HTML, CSS, Javascript, Purecounter Library, Fontawesome Library and Bootstrap.
