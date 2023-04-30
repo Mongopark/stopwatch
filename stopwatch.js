@@ -25,6 +25,9 @@ padLock.style.display="block";
 btnText.textContent="Unlock stopwatch";
 unlockBtn.classList.replace("btn-danger","btn-success");
 }
+else{
+    alert("password Unlock canceled, try again!!!!");
+}
 }
 else{
     alert("password Lock canceled, try again!!!!");
